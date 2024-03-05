@@ -4,6 +4,11 @@
   </div>
 </div>
 
-<% Dir.glob('app/assets/images/gallery/*').map do |path| %>
-<%= image_tag "gallery/#{ File.basename(path) }", class:'gallery-img' %>
-<% end.reduce(&:+) %>
+<div class='gallery-container'>
+  <%# Gets an array of all file paths in gallery directory. Map is then called to transform each file path into an image tag %>
+  <% Dir.glob('app/assets/images/gallery/*').map do |path| %>
+  <%# File.basename(path) removes the directory part of the file path so that an image_tag can be generated %>
+  <%= image_tag "gallery/#{ File.basename(path) }", class:'gallery-img' %>
+  <%# Reduce is used to combine all the image tags into a single string %>
+  <% end.reduce(&:+) %>
+</div>
