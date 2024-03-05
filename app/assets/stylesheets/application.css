@@ -50,11 +50,22 @@
     /* margin-bottom: 20px; */
  }
 
- .nav-img {
-    width: 10%;
+ .nav-img-container {
+    width: 33rem;
     height: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
+    /* padding: 5px; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
  }
+
+.nav-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding: 5px;
+}
 
  .gallery-img {
     width: 300px;
