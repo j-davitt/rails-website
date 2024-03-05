@@ -1,0 +1,9 @@
+<div class="card text-center mb-3" style='background-color: lightgray'>
+  <div class="card-body">
+    <h1 class="card-title">Gallery</h1>
+  </div>
+</div>
+
+<% Dir.glob('app/assets/images/gallery/*').map do |path| %>
+<%= image_tag "gallery/#{ File.basename(path) }", class:'gallery-img' %>
+<% end.reduce(&:+) %>

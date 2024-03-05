@@ -56,3 +56,10 @@
     object-fit: cover;
  }
 
+ .gallery-img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    padding: 5px;
+ }
+

@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
   end
 
-  def about
+  def gallery
   end
 
   def services
