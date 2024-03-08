@@ -1,4 +1,4 @@
-<div class="card text-center mb-3" style='background-color: lightgray'>
+<%# <div class="card text-center mb-3" style='background-color: lightgray'>
   <div class="card-body">
     <h1 class="card-title">Four Seasons Excavating</h1>
     <h3 class="card-title">Call Today!
@@ -6,37 +6,20 @@
     </h3>
     <h4>Serving Kootenai County and surrounding areas for over 20 years!</h4>
   </div>
-</div>
+</div> %>
 
-
-<div class='carousel-container'>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-        <%= image_tag ('gallery/grading3.jpeg'), class:'carousel-image' %>
-        </div>
-        <div class="carousel-item">
-        <%= image_tag ('gallery/grading1.jpeg'), class:'carousel-image' %>
-        </div>
-        <div class="carousel-item">
-        <%= image_tag ('gallery/grading2.jpeg'), class:'carousel-image' %>
-        </div>
-        <div class="carousel-item">
-        <%= image_tag ('gallery/septic1.jpeg'), class:'carousel-image' %>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+<div class='landing-content'>
+    <%= image_tag ('gallery/grading3.jpeg'), class:'landing-img' %>
+    <div class='landing-text'>
+    <h3>Four Seasons Excavating</h3>
+    <h4>Call Today! 208-661-6715</h4>
+    <h5>Serving Kootenai County and surrounding areas for over 20 years!</h5>
     </div>
 </div>
 
-<div>
+
+<div class='content-header'>
     <h3>Services</h3>
+    <div class='underline'></div>
 </div>
 
