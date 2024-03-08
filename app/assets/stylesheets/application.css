@@ -90,9 +90,9 @@
 }
 
  .footer-text {
-    background-color: #5C706A;
+    /* background-color: #5C706A; */
     padding: 20px;
     text-align: center;
     margin-top: 20px;
-    color: white;
+    color: gray;
  }
